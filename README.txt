@@ -1,5 +1,5 @@
-Link to github pages = https://paradox05.github.io/HW5/
-Link to repository = https://github.com/Paradox05/HW5
+Link to github pages = 
+Link to repository = https://github.com/Paradox05/HW6
 
 HW6
 Name: Roniel Abreu, 
