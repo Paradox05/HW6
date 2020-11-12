@@ -1,0 +1,53 @@
+/* These are the general styles for the body header and the form */
+body {
+    background-color: #595b83;
+}
+
+p, button, label {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+mark {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    background-color: rgb(212, 38, 38);
+    color: whitesmoke;
+    border-radius: 15px;
+}
+.form-control:valid {
+    background-color: whitesmoke;
+    border: solid 4px #060930;
+}
+/*here we have the table stylyings*/
+table {
+    font-family: "cmu_serif_italic_upright";
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+
+
+td {
+    background-color: #DCDCDC;
+    /* Fade back to default color when HOVER is off. */
+    transition: background-color 0.3s;
+}
+
+tr > th {
+    background-color: black;
+    color: white;
+}
+/*this makes it so that the upper left cell is not visible*/
+tr:first-child th:first-child  {
+    background-color: transparent;
+}
+tr:nth-child(1) th:nth-child(2),
+tr:nth-child(2) th:nth-child(1) {
+    border-top-left-radius: 15px;
+}
+
