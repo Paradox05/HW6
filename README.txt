@@ -1,4 +1,4 @@
-Link to github pages = 
+Link to github pages = https://github.com/Paradox05/HW6
 Link to repository = https://github.com/Paradox05/HW6
 
 HW6
