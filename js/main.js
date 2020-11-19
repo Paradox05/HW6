@@ -52,7 +52,7 @@ function generate() {
     for(i = 0; i < array.length; i++) {
         console.log(array[i]);
     }
-    //swap if needed
+    //swap if needed swaps min and max if min is bigger than max
     for(var i =0; i < array.length;i +=2) {
         if(array[i] > array[i+1]) {
             [array[i+1], array[i]] = [array[i], array[i+1]];
