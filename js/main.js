@@ -53,22 +53,24 @@ function generate() {
         console.log(array[i]);
     }
     //swap if needed
-    for(var i =0; i < array.length;i+=2) {
+    for(var i =0; i < array.length;i +=2) {
         if(array[i] > array[i+1]) {
             [array[i+1], array[i]] = [array[i], array[i+1]];
         }
     }
-    var $table = $('#tabler')
+    var $table = $('#tabler');
     var $col = $table.parent();
     $table.empty()
  
-    var $row = $('<tr>');
-    $row.append('<th>');
+    
 
     $col.css({
         'opacity': '0.0',
         'padding-left': '500px'
     });
+
+    var $row = $('<tr>');
+    $row.append('<th>');
 
     for(var i = array[0]; i <= array[1]; i++) {
         $row.append('<th>' + i + '</th>');
@@ -76,11 +78,11 @@ function generate() {
     $table.append($row);
     
     
-    for(var i = array[2]; i <= array[3]; ++i) {
+    for(var j = array[2]; j <= array[3]; ++j) {
         $row = $('<tr>');
 
-        $row.append('<th>' + i + '</th>')
-        for(var j = array[0]; j <= array[1]; ++j) {
+        $row.append('<th>' + j + '</th>');
+        for(var i = array[0]; i <= array[1]; ++i) {
             $row.append('<td>' + (i * j) + '</td>');
         }
         $table.append($row);
