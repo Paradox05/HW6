@@ -53,7 +53,7 @@ function generate() {
         console.log(array[i]);
     }
     //swap if needed
-    for(var i =0; i < array.length;i++) {
+    for(var i =0; i < array.length;i+=2) {
         if(array[i] > array[i+1]) {
             [array[i+1], array[i]] = [array[i], array[i+1]];
         }
