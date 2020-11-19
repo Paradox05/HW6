@@ -76,11 +76,11 @@ function generate() {
     $table.append($row);
     
     
-    for(var i = array[2]; i <= array[3]; ++i) {
+    for(var j = array[2]; j <= array[3]; ++j) {
         $row = $('<tr>');
 
         $row.append('<th>' + i + '</th>')
-        for(var j = array[0]; j <= array[1]; ++j) {
+        for(var i = array[0]; i <= array[1]; ++i) {
             $row.append('<td>' + (i * j) + '</td>');
         }
         $table.append($row);
