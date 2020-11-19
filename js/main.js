@@ -3,7 +3,7 @@ var debugging = true;
 $(document).ready(function() {
 
     var i = 0;
-    var inputs = [1,2,3,4];
+    var inputs = [5,1,4,2];
     $('input').each(function() {
         $(this).val(inputs[i]);
         i++;
