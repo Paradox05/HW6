@@ -3,7 +3,7 @@ var debugging = true;
 $(document).ready(function() {
 
     var i = 0;
-    var inputs = [5,1,4,2];
+    var inputs = [1,2,3,4];
     $('input').each(function() {
         $(this).val(inputs[i]);
         i++;
@@ -53,22 +53,24 @@ function generate() {
         console.log(array[i]);
     }
     //swap if needed
-    for(var i =0; i < array.length;i+=2) {
+    for(var i =0; i < array.length;i +=2) {
         if(array[i] > array[i+1]) {
             [array[i+1], array[i]] = [array[i], array[i+1]];
         }
     }
-    var $table = $('#tabler')
+    var $table = $('#tabler');
     var $col = $table.parent();
     $table.empty()
  
-    var $row = $('<tr>');
-    $row.append('<th>');
+    
 
     $col.css({
         'opacity': '0.0',
         'padding-left': '500px'
     });
+
+    var $row = $('<tr>');
+    $row.append('<th>');
 
     for(var i = array[0]; i <= array[1]; i++) {
         $row.append('<th>' + i + '</th>');
@@ -79,7 +81,7 @@ function generate() {
     for(var j = array[2]; j <= array[3]; ++j) {
         $row = $('<tr>');
 
-        $row.append('<th>' + i + '</th>')
+        $row.append('<th>' + j + '</th>');
         for(var i = array[0]; i <= array[1]; ++i) {
             $row.append('<td>' + (i * j) + '</td>');
         }
